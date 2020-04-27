@@ -1,5 +1,5 @@
 
-package com.reactlibrary;
+package com.ringermode;
 
 import android.media.AudioManager;
 import android.content.Context;
