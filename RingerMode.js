@@ -5,7 +5,7 @@ const RNRingerMode = NativeModules.RNRingerMode;
 
 export default class RingerMode {
 	static async getRingerMode() {
-		if (Platform.OS === android)
+		if (Platform.OS === 'android')
 			return await RNRingerMode.getRingerMode();
 		return null;
 	}
