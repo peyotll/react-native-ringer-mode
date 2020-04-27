@@ -1,13 +1,11 @@
 
-import { NativeModules } from 'react-native';
-
-import Utils from './utils';
+import { NativeModules, Platform } from 'react-native';
 
 const RNRingerMode = NativeModules.RNRingerMode;
 
 export default class RingerMode {
 	static async getRingerMode() {
-		if (Utils.isAndroid === true)
+		if (Platform.OS === android)
 			return await RNRingerMode.getRingerMode();
 		return null;
 	}
